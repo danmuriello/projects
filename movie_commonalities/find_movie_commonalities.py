@@ -108,7 +108,8 @@ def printCommonalities(commonalities):
         
     for property, propset in commonalities.iteritems():
         print '  %s: %s' % (property, ','.join(list(propset)))
-        return
+
+    return
 
 if __name__ == '__main__':
     main()
