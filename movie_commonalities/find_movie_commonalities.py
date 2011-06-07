@@ -11,7 +11,7 @@
       Actors: Adam Sandler
       Genre: Romance,Comedy
 
-  @author Dan Muriello findmoviecommonalities@muriello.net
+  @author Dan Muriello dan@muriello.net
 """
 
 from json import loads
