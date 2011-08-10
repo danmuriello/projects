@@ -20,12 +20,8 @@ from random import sample
 
 url = 'http://www.nytimes.com/'
 c = urlopen(url).read()
-links = findall('<a.*?>(.*?)</a>', c)
-links_no_tags = []
-for link in links:
-    if '<' not in link:
-        links_no_tags.append(link)
-lc = ' '.join(links_no_tags).lower()
+links = findall('<a.*?>([\w\s]*?)</a>', c)
+lc = ' '.join(links).lower()
 random_link_words = sample(sub('[^a-z\s]', '', lc).split(), 4)
 
 print random_link_words
