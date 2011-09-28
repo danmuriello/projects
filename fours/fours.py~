@@ -1,0 +1,16 @@
+
+total = 0
+fours = 0
+
+for i in xrange(10, 100):
+    total += 1
+    if (i % 10 == 4) or (i / 10 == 4):
+        fours += 1
+
+print fours
+print total
+print float(fours) / float(total)
+
+"""
+1/5. It's the probability that a four is the 2nd digit, plus the probability that four is the 1st digit. Since you're choosing from the total set of positive two digit numbers, you have every combination. The probability that a four is the 2nd digit (tens place) is 1/10, same for the 1st digit (ones place). Therefore 1/10 + 1/10 = 1/5, or 0.2.
+"""
